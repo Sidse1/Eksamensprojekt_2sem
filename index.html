@@ -4,14 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="JS/menu.js" defer></script>
 </head>
 <body>
   <div class="container">
-     <ul class="menu">
-        <li> <a href="#"> Seneste</a></li>
-        <li> <a href="#"> Løst</a></li>
-        <li> <a href="#"> Ubesvaret</a></li>
-     </ul>
+     <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Seneste</a>
+      <a href="#">Løst</a>
+      <a href="#">Ubesvaret</a>
+    </div>
+    
+    <div id="main2">
+      <button class="openbtn" onclick="toggleNav()">&#9776;</button>
+    </div>
      <button> søg</button>
   </div>
   <div class="main">
