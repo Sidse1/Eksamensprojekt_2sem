@@ -27,22 +27,23 @@
     padding: 5px;
     text-decoration: none;
     color: #7A7A79;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 /* main */
 .main{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    gap: 5px;
+    margin: 14px;
+    grid-template-columns: repeat(3,1);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 
 /*footer*/
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    gap: 5px;
+    margin: 14px;
+    grid-template-columns: repeat(3,1);
+    grid-template-rows: 1fr 2fr 2fr 1fr;
     background-color: #9fa0a4;
 }
