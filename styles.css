@@ -106,7 +106,7 @@
 footer {
     display: grid;
     gap: 5px;
-    margin: 14px;
+    margin: 15px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3fr;
     background-color: #9fa0a4;
