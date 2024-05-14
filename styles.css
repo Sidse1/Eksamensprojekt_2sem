@@ -14,8 +14,7 @@
 
 .menu {
     list-style-type: none;
-    margin-top: -50px; 
-
+   
     padding: 0;
 }
 
@@ -29,6 +28,66 @@
     color: #7A7A79;
     
 }
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: left;
+    z-index: 1;
+    top: 0;
+    left: 0; 
+    background-color: #3DCD58;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    
+  }
+  
+  
+  .sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .closebtn {
+    position: left;
+    top: 0;
+    left: 10px; 
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #009530;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 50px; 
+    left: 35px; 
+  }
+  
+  
+  .openbtn:hover {
+    background-color: #3DCD58;
+  }
+  
+  
+  #main2 {
+    transition: .5s; 
+  }
 /* main */
 .main{
     display: grid;
