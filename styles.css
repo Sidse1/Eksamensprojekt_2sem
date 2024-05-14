@@ -37,7 +37,12 @@
     grid-template-columns: repeat(3,1);
     grid-template-rows: 1fr 2fr 2fr 1fr;
 }
-
+.main button{
+    border-radius: 35%;
+    background-color: #3DCD58;
+    border: 0px;
+    margin: 20px;
+}
 /*footer*/
 footer{
     display: grid;
