@@ -1,121 +1,237 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /* header */
 .container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 20px;
-    background-color: #3DCD58;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px;
+  background-color: #3DCD58;
 }
 
 .menu {
-    list-style-type: none;
-   
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .menu li {
-    display: inline; 
+  display: inline; 
 }
 
 .menu li a {
-    padding: 5px;
-    text-decoration: none;
-    color: #7A7A79;
-    
-}
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: left;
-    z-index: 1;
-    top: 0;
-    left: 0; 
-    background-color: #3DCD58;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-    
-  }
-  
-  
-  .sidebar a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  
-  .closebtn {
-    position: left;
-    top: 0;
-    left: 10px; 
-    font-size: 36px;
-    margin-right: 50px;
-  }
-  
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #009530;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: absolute;
-    top: 50px; 
-    left: 35px; 
-  }
-  
-  
-  .openbtn:hover {
-    background-color: #3DCD58;
-  }
-  
-  
-  #main2 {
-    transition: .5s; 
-  }
-/* main */
-.main{
-    display: grid;
-    gap: 5px;
-    margin: 14px;
-    grid-template-columns: repeat(3,1);
-    grid-template-rows: 1fr 2fr 2fr 1fr;
-}
-.main button{
-    border-radius: 15%;
-    background-color: #009530;
-    border: 0px;
-    margin: 20px;
-}
-/*footer*/
-footer {
-    display: grid;
-    gap: 5px;
-    margin: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3fr;
-    background-color: #9fa0a4;
+  padding: 5px;
+  text-decoration: none;
+  color: #7A7A79;
 }
 
-footer a{
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-    margin: 10px;
-    size: 20px;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: left;
+  z-index: 1;
+  top: 0;
+  left: 0; 
+  background-color: #3DCD58;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: left;
+  top: 0;
+  left: 10px; 
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #009530;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 50px; 
+  left: 35px; 
+}
+
+.openbtn:hover {
+  background-color: #3DCD58;
+}
+
+#main2 {
+  transition: .5s; 
+}
+
+/* Specific styling for container buttons */
+.container .search-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #009530;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15%;
+  margin: 20px;
+}
+
+.container .search-btn:hover {
+  background-color: #3DCD58;
+}
+
+/* main */
+.main {
+  display: grid;
+  gap: 5px;
+  margin: 14px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.main .main-btn {
+  border-radius: 15%;
+  background-color: #009530;
+  border: 0px;
+  margin: 20px;
+}
+
+.main .main-btn:hover {
+  background-color: #3DCD58;
+}
+
+/* footer */
+footer {
+  display: grid;
+  gap: 5px;
+  margin: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr;
+  background-color: #9fa0a4;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  margin: 10px;
+  size: 20px;
+}
+
+/* Login styling */
+.login-body {
+  background-color:#3DCD58; /* Tilpas farven efter dine præferencer */
+}
+
+
+.container2 input[type=text], 
+.container2 input[type=password] {
+  width: 100%;
+  background-color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.container2 button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Specifik styling for log-knappen */
+.container2 button.log {
+  background-color: #04AA6D;
+  justify-content: center;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto; 
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+
+.container2 button.reg {
+  background-color: white;
+  color: #626469;
+  margin-top: 50px;
+  padding: 14px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.container2 button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.logo {
+  width: 80%;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+
+
+.container2 {
+  padding: 16px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+
+  .container2 button.log {
+    width: 150px;
+  }
+  .logo {
+    width: 300px; /* Ændret til procentdel */
+    margin-top: 100px;
+    border-radius: 50%;
+  }
+
+  .container2 {
+    margin-top: 100px;
+  }
+
+  .container2 button.reg {
+    margin-top: 120px;
+  }
 }
