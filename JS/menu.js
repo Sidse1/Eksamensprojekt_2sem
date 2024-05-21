@@ -22,9 +22,10 @@ function toggleNav() {
   }
 }
 
-let buttons = document.querySelectorAll('.sidebar-button');
+document.querySelector('.openbtn').addEventListener('click', toggleNav);
+
+let buttons = document.querySelectorAll('.sidebar a');
 
 buttons.forEach(button => {
-  button.addEventListener('click', toggleNav);
-  toggleNav(); 
+  button.addEventListener('click', closeNav);
 });
