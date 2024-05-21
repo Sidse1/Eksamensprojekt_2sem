@@ -1,32 +1,26 @@
+<!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <script src="JS/login.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="login-body">
-    <form action="action_page.php" method="post">
-      <div class="login-page">
-        <div class="imgcontainer">
-          <img src="logo.png" alt="Schneider electrics logo" class="logo">
+    <form id="loginForm">
+        <div class="login-page">
+            <div class="imgcontainer">
+                <img src="logo.png" alt="Schneider electrics logo" class="logo">
+            </div>
+            <div class="container2">
+                <input type="text" placeholder="E-mail" id="email" required>
+                <input type="password" placeholder="Kodeord:" id="password" required>
+                <button type="button" class="log" onclick="validateLogin()">Log ind</button>
+                <button type="button" class="reg" onclick="registerAlert()">Registrer</button>
+            </div>
         </div>
-      
-        <div class="container2">
-          <input type="text" placeholder="E-mail" name="uname" required>
-      
-          
-          <input type="password" placeholder="Kodeord:" name="psw" required>
-  
-          
-          <button type="button" class="log" onclick="window.location.href = 'index.html';">Log ind</button>
-          <button type="submit" class="reg">Registrer</button>
-        
-        </div>
-      </div>
     </form>
-  </body>
-  
-
 </body>
 </html>
+
