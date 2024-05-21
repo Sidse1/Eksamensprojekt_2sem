@@ -8,22 +8,25 @@
     <script src="https://kit.fontawesome.com/548d2f6510.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Seneste spørgsmål</a>
-      <a href="#">Løste spørgsmål</a>
-      <a href="#">Ubesvaret spørgsmål</a>
-      <a href="#">Mine spørgsmål</a>
-      <a href="#">Gemte spørgsmål</a>
-      <a href="login.html">Log ud</a>
+  
+  <header>
+    <div class="container">
+        <div id="main2">
+            <button class="openbtn">&#9776;</button>
+        </div>
+        <button class="search-btn">Søg</button>
     </div>
-    
-    <div id="main2">
-      <button class="openbtn" onclick="toggleNav()">&#9776;</button>
-    </div>
-    <button class="search-btn">Søg</button>
-  </div>
+</header>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Seneste spørgsmål</a>
+    <a href="#">Løste spørgsmål</a>
+    <a href="#">Ubesvaret spørgsmål</a>
+    <a href="#">Mine spørgsmål</a>
+    <a href="#">Gemte spørgsmål</a>
+    <a href="login.html">Log ud</a>
+</div>
   
   <div class="main">
     <button class="main-btn">Seneste</button>
@@ -31,11 +34,12 @@
     <button class="main-btn">Ubesvaret</button>
   </div>  
   
-  <footer>
-    <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
-    <a href="#"><i class="fa-solid fa-plus"></i></a>
-    <a href="#"><i class="fa-regular fa-user"></i></a>
-  </footer>
-  
+
 </body>
+
+<footer>
+  <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+  <a href="#"><i class="fa-solid fa-plus"></i></a>
+  <a href="#"><i class="fa-regular fa-user"></i></a>
+</footer>
 </html>
