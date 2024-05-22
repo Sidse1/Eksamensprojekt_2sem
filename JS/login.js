@@ -23,8 +23,6 @@ function validateLogin() {
 }
 
 function registerAlert() {
-    alert("Registreringsfunktionen er ikke implementeret endnu.");
+    alert("E-mail findes allerede");
 }
 
-document.getElementById('loginButton').addEventListener('click', validateLogin);
-document.getElementById('registerButton').addEventListener('click', registerAlert);
