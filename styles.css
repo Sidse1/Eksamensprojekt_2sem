@@ -167,7 +167,6 @@ footer {
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 3fr;
-  
   position: fixed;
   bottom: 0;
   width: 100%; /* Sørger for at footer fylder hele bredden */
@@ -177,8 +176,8 @@ footer a {
   text-decoration: none;
   padding: 10px;
   color: white;
-  margin: 10px;
-  font-size: 20px; /* Ændret fra "size" til "font-size" */
+  margin: 30px;
+  font-size: 45px; /* Ændret fra "size" til "font-size" */
 }
 
 
@@ -312,4 +311,6 @@ footer a {
   .container2 button.reg {
     margin-top: 120px;
   }
+ 
 }
+
