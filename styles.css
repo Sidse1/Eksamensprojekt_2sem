@@ -15,6 +15,36 @@ header {
   background-color: #3DCD58;
 }
 
+/* styling af søgefunktion*/
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border:#707070;
+  border-radius: 50px;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  border:#3DCD58;
+  cursor: pointer;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -233,6 +263,29 @@ footer a {
   padding: 16px;
   margin-top: 100px;
 }
+
+
+/*telefon*/
+.container3 {
+  display: flex;
+  justify-content: flex-end; /* Placerer knappen i højre side */
+  margin-right: 40px;
+}
+
+.telefon {
+  background-color: black;
+  border-radius: 100%;
+
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.telefon i {
+  font-size: 40px; /* Juster størrelsen efter behov */
+  color: white; /* Juster farven efter behov */
+}
+
 
 @media screen and (max-width: 300px) {
   span.psw {
