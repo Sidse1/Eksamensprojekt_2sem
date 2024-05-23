@@ -2,7 +2,7 @@ function myFunction() {
     let popup = document.getElementById("myPopup");
     let popupText = document.getElementById("popupText");
 
-    // Randomize the popup content
+    
     let messages = ["Medarbejder tilgængelig", "5 minutters ventetid"];
     let randomMessage = messages[Math.floor(Math.random() * messages.length)];
     popupText.textContent = randomMessage;
