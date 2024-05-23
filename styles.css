@@ -187,6 +187,8 @@ footer a {
     bottom: 0;
     width: 100%;
   }
+
+
 }
 
 
@@ -357,6 +359,57 @@ footer a {
 }
 
 
+/* styling af tilføj spørgsmål*/
+.header2 {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.nysporgs {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  color: black; /* Farve på spørgsmål */
+  font-size: 30px;
+}
+
+.backButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #4C4B4B; 
+  margin-right: 15px; 
+  font-size: 35px;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+  color: #707070; 
+}
+
+.tilfoj1 {
+  padding-left: 35px;
+  margin-top: 15px;
+  
+}
+
+.inputField2 {
+  width: 280px; 
+  height: 30px; 
+  margin-left: 36px; 
+  margin-top: 25px;
+}
+
+.productList {
+  width: 280px; 
+  height: 30px; 
+  margin-left: 36px; 
+  margin-top: 25px;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 300px) {
   span.psw {
     display: block;
@@ -387,6 +440,6 @@ footer a {
     bottom: 0;
     width: 100%;
   }
-
+ 
 }
 
