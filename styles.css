@@ -181,7 +181,7 @@ footer a {
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   footer {
     position: fixed;
     bottom: 0;
@@ -198,7 +198,7 @@ footer a {
 
 /* Login styling */
 .login-body {
-  background-color:#3DCD58; /* Tilpas farven efter dine præferencer */
+  background-color:#3DCD58; 
   
 }
 
@@ -275,10 +275,8 @@ footer a {
 }
 
 
-/*popup og telefon*/
+/*popup og telefon-ikon*/
 
-
-/* Telefon */
 .container3 {
   display: flex;
   justify-content: flex-end; /* Placerer knappen i højre side */
@@ -409,6 +407,28 @@ footer a {
   margin-top: 25px;
   font-size: 15px;
 }
+
+
+
+.tilfojknap {
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: #009530;
+  font-size: 20px;
+}
+
+.tilfojknap:hover {
+  background-color:#707070; /* Baggrundsfarve ved hover */
+}
+
+.rykned {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
 
 @media screen and (max-width: 300px) {
   span.psw {
