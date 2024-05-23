@@ -133,11 +133,10 @@ form.example::after {
 
 
 
-/* Specific styling for container buttons */
-
+/*styling for container buttons */
 .main {
   display: flex;
-  flex-direction: column; /* Sørger for at elementerne er stablet lodret */
+  flex-direction: column; 
   gap: 5px;
   margin: 14px;
 }
@@ -158,18 +157,19 @@ form.example::after {
 }
 
 
+
 /* footer */
 footer {
   display: grid;
   background-color: #7A7A79;
-  justify-items: center; /* Centrer vandret */
-  align-items: center; /* Centrer lodret */
+  justify-items: center; 
+  align-items: center; 
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 3fr;
-  
-  bottom: 0;
-  width: 100%; /* Sørger for at footer fylder hele bredden */
+  position: relative; 
+  margin-top: 50px; 
+  width: 100%; 
 }
 
 footer a {
@@ -177,7 +177,16 @@ footer a {
   padding: 10px;
   color: white;
   margin: 30px;
-  font-size: 45px; /* Ændret fra "size" til "font-size" */
+  font-size: 45px; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 
@@ -373,18 +382,10 @@ footer a {
   .container2 button.reg {
     margin-top: 120px;
   }
- 
   footer {
-    display: grid;
-    background-color: #7A7A79;
-    justify-items: center; /* Centrer vandret */
-    align-items: center; /* Centrer lodret */
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3fr;
     position: fixed;
     bottom: 0;
-    width: 100%; /* Sørger for at footer fylder hele bredden */
+    width: 100%;
   }
 
 }
