@@ -76,7 +76,7 @@ form.example::after {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #3DCD58;
+  background-color: #00952F;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -93,6 +93,7 @@ form.example::after {
 
 .sidebar a:hover {
   color: #f1f1f1;
+  
 }
 
 .closebtn {
@@ -145,16 +146,20 @@ form.example::after {
   font-size: 25px;
   font-family: Arial Rounded MT;
   color: white;
+  text-align: center;
   padding: 25px;
   border-radius: 20px;
   background-color: #009530;
   border: 0px;
   margin: 20px;
+  text-decoration: none; /* Fjerner understregning fra links */
+  display: inline-block; /* Sørg for, at links opfører sig som blokkelementer */
 }
 
 .main .main-btn:hover {
   background-color: #3DCD58;
 }
+
 
 
 
@@ -186,9 +191,18 @@ footer a {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 100px;
   }
-
-
+  footer a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin: 30px;
+    font-size: 35px; 
+  }
+  footer a:hover {
+    color: black; /* Ændrer farven til gul ved hover */
+  }
 }
 
 
@@ -357,6 +371,53 @@ footer a {
 }
 
 
+/* styling af senest spørgsmål*/
+
+.header3 {
+  color: black;
+  padding: 30px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.senest {
+  margin: 5px 10px;
+  padding: 0;
+  flex-grow: 1;
+  color: black; 
+  font-size: 20px;
+}
+
+.next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #818286;
+  font-size: 35px;
+}
+
+.next:hover {
+  text-decoration: underline;
+  color: #707070;
+}
+
+.line2 {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; 
+  margin: 20px 0; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+
+
+
+
 /* styling af tilføj spørgsmål*/
 .header2 {
   color: black;
@@ -369,7 +430,7 @@ footer a {
   margin: 0;
   padding: 0;
   flex-grow: 1;
-  color: black; /* Farve på spørgsmål */
+  color: black; 
   font-size: 30px;
 }
 
@@ -428,6 +489,68 @@ footer a {
   margin-top: 25px;
   margin-left: 35px;
 }
+
+
+/* styling af profilside*/
+.profilbild  {
+  border-radius: 50%;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh; /* Gør containeren høj nok til at vise lodret centrering */
+  
+}
+
+.container6 {
+  display: flex;
+  flex-direction: column; /* Sørger for, at kasserne er stablet lodret */
+  justify-content: center;
+  align-items: center;
+  margin-top: -5;
+}
+
+.kasse {
+  border: 1.5px solid black; /* Sort kant */
+  color: #707070;
+  border-radius: 15px;
+  padding: 10px; /* Fyld mellem teksten og kanten */
+  display: block; /* Ændret til block for at placere kasserne under hinanden */
+  font-size: 15px;
+  margin-bottom: 15px; /* Tilføjer mellemrum mellem kasserne */
+  width: 340px; /* Fast bredde */
+  height: 50px; /* Fast højde */
+  text-align: left; /* Justerer teksten til venstre */
+}
+
+
+.knapper-container2 {
+  display: flex;
+    justify-content: center; /* Centrer knapperne vandret */
+    width: 100%;
+    margin-top: 10px; /* Tilføjer lidt mellemrum over knapperne */
+    padding-bottom: 50px; /* Tilføjer luft nedenunder knapperne */
+  
+  
+}
+
+.knap4 {
+  padding: 10px 35px;
+  background-color:#00952F;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  
+}
+
+
 
 
 @media screen and (max-width: 300px) {
