@@ -551,6 +551,150 @@ footer a {
 }
 
 
+/* styling af chat funktion*/
+
+.chat-container {
+  max-width: 80%; 
+  background-color: #ffffff; 
+  border: 1px solid #000000; 
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+.chat-container.darker {
+  background-color: #dddddd; 
+  border-color: #999999; 
+}
+
+
+.container-7 {
+  background-color: #ffffff; 
+  border: 1px solid #000000; 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 50px auto; 
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.chat-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.chat-container img {
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.chat-container img.right {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+.chat-time-right {
+  color: #aaa;
+}
+
+
+.chat-time-left {
+  color: #999;
+}
+
+.svar {
+  margin-top: 10px;
+}
+
+.gem {
+  position: absolute; 
+  right: 25%; 
+  bottom: -40px; 
+  font-size: 25px;
+   
+}
+
+.chat-besked {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25%; 
+  
+  
+}
+.chat-besked input {
+  width: 200px; 
+  border-radius: 30px;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .chat-container {
+    max-width: 90%; 
+  }
+
+  
+  .container-7 {
+    width: 90%; 
+  }
+
+ 
+}
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 767px) { /* Mobilskærme */
+  .gem {
+      right: 20px; /* Juster placeringen efter behov */
+      bottom: 22%; /* Juster placeringen efter behov */
+      font-size: 25px; /* Juster fontstørrelsen efter behov */
+  }
+  .chat-besked {
+      margin-right: 3%; /* Juster marginen fra højre efter behov */
+  }
+  .chat-besked input {
+      width: 150px; /* Juster bredden efter behov */
+      margin-top: 10px; /* Juster topmargin efter behov */
+      font-size: 10px; /* Juster fontstørrelsen efter behov */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* iPad */
+  /* Tilpasninger til iPad-størrelser */
+}
+
+@media screen and (min-width: 1024px) { /* Computer */
+  /* Behold de tidligere stilarter */
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .chat-container {
+    max-width: 95%; 
+  }
+
+  
+  .container-7 {
+    width: 90%; 
+  }
+
+
+}
+
 
 
 @media screen and (max-width: 300px) {
