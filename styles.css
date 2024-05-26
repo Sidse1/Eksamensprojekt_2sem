@@ -564,10 +564,18 @@ footer a {
   align-items: center;
 }
 
-.chat-container.darker {
-  background-color: #dddddd;
-  border-color: #999999;
+
+.container-darker {
+  max-width: 80%;
+  background-color: #3DCD58;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
+
 
 .container-7 {
   background-color: #ffffff;
@@ -582,22 +590,23 @@ footer a {
   align-items: center;
 }
 
-.chat-container::after {
-  content: "";
-  clear: both;
-  display: table;
+.time-left {
+  color: white;
+  margin-left: auto;
 }
 
 .chat-container img {
   max-width: 60px;
-  width: 100%;
+  width: 30%;
   margin-right: 20px;
   border-radius: 50%;
 }
 
-.chat-container img.right {
-  margin-left: 20px;
-  margin-right: 0;
+.right {
+  max-width: 60px;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
 .chat-time-right {
@@ -605,10 +614,7 @@ footer a {
   margin-left: auto;
 }
 
-.chat-time-left {
-  color: #999;
-  margin-right: auto;
-}
+
 
 .svar {
   margin-top: 10px;
@@ -632,8 +638,8 @@ footer a {
 .chat-besked {
   display: flex;
   justify-content: flex-end;
-  width: auto; /* Allows .chat-besked to shrink */
-  margin-left: auto; /* Ensures .chat-besked stays to the right */
+  width: auto; 
+  margin-left: auto; 
 }
 
 .chat-besked input {
@@ -663,6 +669,8 @@ footer a {
   padding: 5px;
   margin-right: 0;
 }
+
+
 
 /* skærme mindre end 768px */
 @media only screen and (max-width: 768px) {
