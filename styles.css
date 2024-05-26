@@ -554,41 +554,39 @@ footer a {
 /* styling af chat funktion*/
 
 .chat-container {
-  max-width: 80%; 
-  background-color: #ffffff; 
-  border: 1px solid #000000; 
+  max-width: 80%;
+  background-color: #FFF8F8;
+  border: 1px solid #000000;
   border-radius: 15px;
   padding: 10px;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
-
 
 .chat-container.darker {
-  background-color: #dddddd; 
-  border-color: #999999; 
+  background-color: #dddddd;
+  border-color: #999999;
 }
-
 
 .container-7 {
-  background-color: #ffffff; 
-  border: 1px solid #000000; 
+  background-color: #ffffff;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 10px;
-  margin: 50px auto; 
+  margin: 50px auto;
   width: 50%;
   display: grid;
-  grid-template-columns: 1fr; 
-  justify-content: center; 
-  align-items: center; 
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .chat-container::after {
   content: "";
   clear: both;
   display: table;
 }
-
 
 .chat-container img {
   max-width: 60px;
@@ -597,103 +595,142 @@ footer a {
   border-radius: 50%;
 }
 
-
 .chat-container img.right {
   margin-left: 20px;
   margin-right: 0;
 }
 
-
 .chat-time-right {
   color: #aaa;
+  margin-left: auto;
 }
-
 
 .chat-time-left {
   color: #999;
+  margin-right: auto;
 }
 
 .svar {
   margin-top: 10px;
 }
 
+.container9 {
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 10px 0;
+}
+
 .gem {
-  position: absolute; 
-  right: 25%; 
-  bottom: -40px; 
   font-size: 25px;
-   
+  
 }
 
 .chat-besked {
   display: flex;
   justify-content: flex-end;
-  margin-right: 25%; 
-  
-  
+  width: auto; /* Allows .chat-besked to shrink */
+  margin-left: auto; /* Ensures .chat-besked stays to the right */
 }
+
 .chat-besked input {
-  width: 200px; 
+  width: 200px;
   border-radius: 30px;
   height: 30px;
   font-size: 12px;
   padding: 5px;
+  margin-right: 10px;
 }
 
+.chat-besked button {
+  height: 30px;
+  border-radius: 30px;
+  background-color:#00952F;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
 
+.send-btn {
+  width: 80px;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 0;
+}
+
+/* skærme mindre end 768px */
 @media only screen and (max-width: 768px) {
-  
-  .chat-container {
-    max-width: 90%; 
-  }
-
-  
   .container-7 {
-    width: 90%; 
+    width: 90%;
   }
 
- 
-}
-
-
-/* Media queries for responsive design */
-@media screen and (max-width: 767px) { /* Mobilskærme */
-  .gem {
-      right: 20px; /* Juster placeringen efter behov */
-      bottom: 22%; /* Juster placeringen efter behov */
-      font-size: 25px; /* Juster fontstørrelsen efter behov */
+  .chat-container {
+    max-width: 100%;
+    padding: 8px;
+    margin: 8px 0;
   }
-  .chat-besked {
-      margin-right: 3%; /* Juster marginen fra højre efter behov */
+
+  .chat-container img {
+    max-width: 50px;
+    margin-right: 10px;
   }
+
   .chat-besked input {
-      width: 150px; /* Juster bredden efter behov */
-      margin-top: 10px; /* Juster topmargin efter behov */
-      font-size: 10px; /* Juster fontstørrelsen efter behov */
+    width: 150px;
+    font-size: 10px;
+    padding: 10px;
+    margin-right: 5px;
+  }
+
+  .send-btn {
+    width: 60px;
+    font-size: 15px;
+    padding: 4px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) { /* iPad */
-  /* Tilpasninger til iPad-størrelser */
-}
-
-@media screen and (min-width: 1024px) { /* Computer */
-  /* Behold de tidligere stilarter */
-}
-
+/* skærme mindre end 480px */
 @media only screen and (max-width: 480px) {
-  
-  .chat-container {
-    max-width: 95%; 
-  }
-
-  
   .container-7 {
-    width: 90%; 
+    width: 90%;
+    padding: 5px;
   }
 
+  .chat-container {
+    padding: 5px;
+  }
 
+  .chat-container img {
+    max-width: 40px;
+    margin-right: 8px;
+  }
+
+  .chat-besked input {
+    width: 120px;
+    font-size: 8px;
+    padding: 3px;
+    margin-right: 3px;
+  }
+
+  .send-btn {
+    width: 50px;
+    font-size: 12px;
+    padding: 3px;
+  }
 }
+
+
+
+
+
+
+
 
 
 
